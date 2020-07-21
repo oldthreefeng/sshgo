@@ -36,7 +36,7 @@ var (
 )
 
 func (c *SshConfig) InitConfig() error {
-	var path = "./config/config.toml"
+	var path = "./config.toml"
 	_, err := toml.DecodeFile(path, c)
 	if Host != "" {
 		c.Host = Host
